@@ -1,11 +1,12 @@
 #!/usr/bin/ansible-playbook
 ---
- - name: case 9
+ - name: case9
    hosts: yaml
+   vars:
+     mom: "pravathi"
+     dad: "prasad"
+     sis: "surya"
    tasks:
-    - name: display all fscts variables
-      debug:
-       msg:
-        my host is {{ansible_hostname}}
-        my ip is {{ansible_facts['fqdn']}}
-        my ip v4 is {{ansible_facts.default_ipv4}}
+   - name: using customized varibles
+     debug:
+       msg: "i love {{dad}}"
