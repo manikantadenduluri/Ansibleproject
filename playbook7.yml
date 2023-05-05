@@ -1,7 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
  - name: case 7
-   hosts: yaml
+   hosts: all
    tasks:
     - name: display all fscts variables
       debug:
