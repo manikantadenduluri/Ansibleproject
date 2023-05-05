@@ -1,7 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
  - name: case 6
-   hosts: yaml
+   hosts: all
    tasks:
      - name: printing ip
        debug:
