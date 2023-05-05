@@ -1,7 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
  - name: case 10
-   hosts: yaml
+   hosts: <hostname>
    tasks:
     - name: verbosity 1
       debug:
