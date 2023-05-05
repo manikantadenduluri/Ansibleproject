@@ -1,7 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
  - name: case 3
-   hosts: yaml
+   hosts: <hostname>
    tasks:
       - name: multiple msgs
         debug:
