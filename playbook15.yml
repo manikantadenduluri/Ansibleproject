@@ -1,7 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
  - name: case 15
-   hosts: yaml
+   hosts: <hostname>
    tasks:
     - name: kernal version
       command: uname -a
