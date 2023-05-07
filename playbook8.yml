@@ -1,6 +1,6 @@
 #!/usr/bin/ansible-playbook
 ---
- - name: case 10
+ - name: case 8
    hosts: <hostname>
    tasks:
     - name: verbosity
