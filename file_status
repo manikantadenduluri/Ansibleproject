@@ -1,0 +1,11 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: practice2
+   hosts: mani
+   tasks:
+    - stat:
+       path: /tmp/passwd
+      register: file_status
+    - name: Print file status
+      debug:
+       var: file_status
