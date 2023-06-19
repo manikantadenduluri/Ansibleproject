@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: lineinfile
+   hosts: mani
+   tasks: 
+    - name: lineinfile
+      lineinfile: "dest=/tmp/line line='10.10.51.255	prac'"

@@ -1,0 +1,9 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: service 
+   hosts: mani
+   tasks: 
+    - name: service status
+      shell: service httpd status
+      register: status
+    - debug: var=status.stdout_lines

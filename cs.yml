@@ -1,0 +1,8 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: checking the status
+   hosts: mani
+   tasks: 
+    - shell: service sshd status
+      register: chkconfig
+    - debug: var=chkconfig.stdout_lines

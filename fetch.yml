@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: fetch
+   hosts: mani
+   tasks: 
+    - name: fetch
+      fetch: src=/etc/group dest=/tmp/

@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: link 
+   hosts: mani
+   tasks: 
+    - name: file module 
+      file: src=/etc/passwd dest=/tmp/passwd-link  state=link owner=mani group=mani

@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: start httpd
+   hosts: mani
+   tasks: 
+    - name: httpd service 
+      service: name=httpd state=started

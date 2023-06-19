@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+--- 
+ - name: synchronize
+   hosts: mani
+   tasks: 
+    - name: synchronize
+      synchronize: src=/etc/shadow dest=/tmp

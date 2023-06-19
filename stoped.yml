@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: service stop
+   hosts: mani
+   tasks: 
+    - name: httpd stop
+      service: name=httpd state=stopped

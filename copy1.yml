@@ -1,0 +1,6 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: by using copy module
+   hosts: mani
+   tasks:
+    - copy: src=/etc/passwd dest=/tmp/

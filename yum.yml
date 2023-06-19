@@ -1,0 +1,7 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: yum
+   hosts: mani
+   tasks: 
+    - name: yum installation
+      yum: name=httpd state=present
