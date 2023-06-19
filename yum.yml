@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/ansible-playbook
 ---
  - name: yum
@@ -5,3 +6,23 @@
    tasks: 
     - name: yum installation
       yum: name=httpd state=present
+=======
+---
+ - name: install packages
+   hosts: yaml
+   tasks:
+      - name: install httpd
+        yum: name=httpd state=present
+
+      - name: install ftp
+        yum: name=ftp state=present
+
+      - name: install vsftpd
+        yum: name=vsftpd state=present
+
+      - name: install samba
+        yum: name=samba state=present
+
+      - name: install finger
+        yum: name=finger state=present
+>>>>>>> 10011cc4abb73e506c35a818133de51e39e15573
