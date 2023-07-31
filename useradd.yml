@@ -1,0 +1,13 @@
+#!/usr/bin/ansible-playbook
+---
+ - name: adding user
+   hosts: mani
+   tasks:
+     - name: creating users
+       user:
+         name: user1
+         uid: 3001
+         group: bat23a
+         shell: /bin/bash
+         home: /tmp/adamlis
+         createhome: yes
